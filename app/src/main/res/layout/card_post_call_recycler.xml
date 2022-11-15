@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:layout_margin="15dp"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:background="@drawable/round_post_card"
+            android:padding="15dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/userImagePost"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/melics">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/userNamePost"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:text="MELICS CALDERON AMAYA">
+
+                    </TextView>
+                    <TextView
+                        android:id="@+id/datePost"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2012/28/02"
+                        android:textStyle="italic"
+                        android:textSize="13dp"
+                        android:textColor="@color/black">
+
+                    </TextView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_height="0.6dp"
+                android:background="#FFFFFF"/>
+            <TextView
+                android:id="@+id/textPost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:layout_marginBottom="10dp"
+                ></TextView>
+
+
+
+            <Button
+                android:id="@+id/joinMeetingButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Join meeting">
+
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "518137698409",
+    "project_id": "crewnicate-7ad02",
+    "storage_bucket": "crewnicate-7ad02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:518137698409:android:87f74d845e552c66b5aaf8",
+        "android_client_info": {
+          "package_name": "com.example.piapoi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "518137698409-ra7o38vhrvvd40p2lltlame17qlmli2j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_IakmaP8JzTqFVZeSv430eLCPcfY2LeM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "518137698409-ra7o38vhrvvd40p2lltlame17qlmli2j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

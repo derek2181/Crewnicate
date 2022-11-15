@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/cancelImageMessage"
+            android:layout_width="60dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:src="@drawable/ic_close"
+            android:background="@color/black">
+        </ImageButton>
+        <ImageView
+            android:id="@+id/messageImage"
+            android:layout_width="match_parent"
+            android:background="#2A919090"
+            android:layout_height="0dp"
+            android:layout_weight="0.75"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/melics">
+        </ImageView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.06"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/messsageImageCaption"
+                android:layout_width="0dp"
+                android:layout_weight="0.85"
+                android:layout_height="match_parent"
+                android:background="@drawable/textinput"
+                android:hint="Add a caption..."
+                android:padding="10dp" />
+
+            <ImageButton
+
+                android:id="@+id/sendImageMessage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15"
+
+                android:src="@drawable/ic_send_chat" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="registerText">Registrate</string>
+    <string name="emailRegister">Email</string>
+    <string name="passwordRegister">Contraseña</string>
+    <string name="name">Nombre</string>
+    <string name="lastname">Apellido(s)</string>
+    <string name="confirmPassword">Confirmar contraseña</string>
+    <string name="btnRegister">Registarse</string>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/message_left_bubble">
+
+
+            <TextView
+                android:id="@+id/text_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/message_left_bubble"
+                android:lineSpacingExtra="2dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="4dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+
+                android:text="Hi, How are you?"
+                android:textColor="@color/black"
+                android:textSize="13.5dp" />
+
+
+            <ImageView
+                android:id="@+id/messageImage"
+
+                android:layout_width="150dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:src="@drawable/melics">
+
+            </ImageView>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+        <TextView
+            android:id="@+id/date_message"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:text="11:09">
+
+        </TextView>
+    </LinearLayout>
+</LinearLayout>

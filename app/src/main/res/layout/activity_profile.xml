@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_700"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/backProfileButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@color/purple_700"
+                android:minWidth="48dp"
+                android:src="@drawable/ic_back_button">
+
+            </ImageButton>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/imageViewSendNewMessage"
+
+                    android:layout_width="82dp"
+                    android:layout_height="80dp"
+                    app:srcCompat="@drawable/logo" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/profileText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_centerInParent="true"
+                        android:text="Profile"
+                        android:textColor="@color/white"
+                        android:textSize="22dp"></TextView>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profileImageView"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+
+                        android:translationZ="-5dp"
+                        android:src="@drawable/melics">
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+
+
+                    <ImageButton
+                        android:id="@+id/fileChooserButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/roundbtn"
+                        android:layout_marginTop="-40dp"
+                        android:backgroundTint="@color/purple_700"
+                        android:elevation="10dp"
+                        android:padding="15dp"
+                        android:src="@drawable/ic_addmessage"
+                        android:translationZ="10000dp"></ImageButton>
+
+                    <Button
+                        android:id="@+id/logOutButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/purple_700"
+                        android:text="Log out">
+
+                    </Button>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Encrypt my password"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="10dp"
+                        android:textStyle="bold"></TextView>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/encryptPasswordSwitch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:thumb="@drawable/switch_thumb"
+                            app:showText="true"
+                            app:track="@drawable/switch_track"
+
+                            ></androidx.appcompat.widget.SwitchCompat>
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Active status"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="10dp"
+                        android:textStyle="bold"></TextView>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/statusSwitch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:textOff="offline"
+                            android:textOn="active"
+                            android:textSize="5dp"
+                            android:thumb="@drawable/switch_thumb"
+                            app:showText="true"
+                            app:track="@drawable/switch_track"
+
+                            ></androidx.appcompat.widget.SwitchCompat>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textSize="20dp">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/userNameProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp">
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last name"
+                        android:textSize="20dp">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/lastNameProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp">
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Password"
+                        android:textSize="20dp">
+
+                    </TextView>
+
+                    <EditText
+                        android:inputType="textPassword"
+                        android:id="@+id/userPasswordProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp">
+
+                    </EditText>
+
+
+                    <Button
+                        android:id="@+id/applyChangesProfile"
+                        android:backgroundTint="@color/purple_700"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Apply changes"
+                        android:paddingTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:paddingBottom="15dp"></Button>
+
+                </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+</ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

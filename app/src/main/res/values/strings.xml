@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">piaPOI</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="invalid_name">Your name must contain only letters</string>
+    <string name="invalid_email">"Please enter a valid email "</string>
+    <string name="invalid_password">Your password must contain more than 6 characters</string>
+    <string name="empty_name">Please fill this field</string>
+    <string name="empty_post">You can not create a post without text</string>
+    <string name="password_requirements">Please introduce a password with one digit, a lower case letter, an upper case letter and at least eight characters</string>
+</resources>
